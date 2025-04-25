@@ -32,11 +32,13 @@ function App() {
       {
         id: tareas.length + 1,
         nombre: nuevaTarea,
-        estado: todo,
+        estado: "todo",
       },
     ]);
     setNuevaTarea("");
   };
+
+  // funciones drag and drop
 
   return (
     <>
@@ -51,7 +53,7 @@ function App() {
           style={{ width: "30%", padding: "10px", bordeRadius: "4px" }}
         />
         <button
-          onClick={() => registrarTarea}
+          onClick={() => registrarTarea()}
           style={{
             marginLeft: "10px",
             padding: "5px",
